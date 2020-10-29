@@ -1,0 +1,16 @@
+[
+    {
+      "id": 0,
+      "title": "Garden of Salvation",
+      "description": "The Garden calls out to you.",
+      "encounters": [{
+          "encName": "Chase the Consecrated Mind",
+          "strategies": [{
+            "stratName": "Strategy 1",
+            "overview": "Here is info to complete strategy 1"
+          }]
+      }],
+      "time": "45-90 mins",
+      "img": "garden"
+    }
+  ]
