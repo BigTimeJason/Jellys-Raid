@@ -52,16 +52,19 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        <Header>
-        </Header>
-        <Button
-        className="backbutton"
-          variant="outline-secondary"
-          size="lg"
-          onClick={() => this.setState({currentPage: null})}
-        >
-          Home
-        </Button>
+        <Header></Header>
+        {this.state.currentPage != null ? (
+          <Button
+            className="backbutton"
+            variant="outline-secondary"
+            size="lg"
+            onClick={() => this.setState({ currentPage: null })}
+          >
+            Home
+          </Button>
+        ) : (
+          <></>
+        )}
         {this.state.currentPage == null ? (
           <Row className="row justify-content-md-center">
             <CardGroup>
