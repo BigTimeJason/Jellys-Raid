@@ -57,8 +57,8 @@ class GardenOfSalvation {
     /*
     Questions for later
 
-    1. Why does RaidArray exist (in Home.js) if we have classes like this one (GardenOfSalvation.js or if we make a new raid - LastWish.js for example)?
-    2. With the description below, does that mean we have to create many many constants to accomodate the description of all the raid details?
+    1. Why does RaidArray exist (in Home.js) if we have classes like this one (GardenOfSalvation.js // if we make a new raid - LastWish.js for example)?
+    2. With the description above, does that mean we have to create many many constants to accomodate the description of all the raid details?
 
     */
 
