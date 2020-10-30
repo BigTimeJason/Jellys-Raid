@@ -75,7 +75,7 @@ class GardenOfSalvation {
             },
             {
               id: 1,
-              stratName: "Strategy 2",
+              stratName: "Challenge - Leftovers",
               overview: e1s2overview,
               individualStrat: [],
             },
@@ -93,6 +93,58 @@ class GardenOfSalvation {
             {
               id: 1,
               stratName: "Strategy 2",
+              overview: "",
+              individualStrat: [],
+            },
+            {
+              id: 2,
+              stratName: "Challenge - A Link to the Chain",
+              overview: "",
+              individualStrat: [],
+            },
+          ],
+        },
+        {
+          encName: "Defeat the Consecrated Mind",
+          strategies: [
+            {
+              id: 0,
+              stratName: "Strategy 1",
+              overview: "",
+              individualStrat: [],
+            },
+            {
+              id: 1,
+              stratName: "Challenge - To The Top",
+              overview: "",
+              individualStrat: [],
+            },
+          ],
+        },
+        {
+          encName: "Defeat the Sanctified Mind",
+          strategies: [
+            {
+              id: 0,
+              stratName: "Strategy 1",
+              overview: "",
+              individualStrat: [],
+            },
+            {
+              id: 1,
+              stratName: "Strategy 2",
+              overview: "",
+              individualStrat: [],
+            },
+            {
+              id: 2,
+              stratName: "Challenge - Zero to One Hundred",
+              overview: "",
+              individualStrat: [],
+            },
+            {
+              id: 3,
+              stratName: "Challenge - Stop Hitting Yourself",
               overview: "",
               individualStrat: [],
             },
