@@ -35,7 +35,7 @@ class Home extends React.Component {
           title: "Last Wish",
           description: "The opportunity of a lifetime.",
           encounters: 6,
-          time: "45-90 mins",
+          time: "60-120 mins",
           img: lastwish,
         },
         {

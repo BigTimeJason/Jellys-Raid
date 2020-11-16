@@ -14,6 +14,9 @@ class RaidDetails extends React.Component {
 
   /*
   This class renders details on a raid depending on what raid was selected
+
+  Notes:
+  
   */
   render() {
     var currentRaid = null;
