@@ -43,7 +43,6 @@ class RaidDetails extends React.Component {
                   title={strategy.stratName}
                   className="text-left"
                 >
-
                   {strategy.overviews.map((overview) => {
                     console.log(overview.text);
                     console.log(overview.type);
@@ -51,7 +50,15 @@ class RaidDetails extends React.Component {
                     switch (overview.type) {
                       case 0:
                       default:
-                        return (<TextContainer text={overview.text} />);
+                        return (
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm">
+                                <TextContainer text={overview.text} />
+                              </div>
+                            </div>
+                          </div>
+                        );
                       case 1:
                         return (
                           <VideoContainer
