@@ -37,6 +37,7 @@ class RaidDetails extends React.Component {
               <Navbar.Brand>{encounter.encName}</Navbar.Brand>
             </Navbar>
             <Tabs defaultActiveKey="0" id="uncontrolled-tab-example">
+              {console.log(encounter.strategies)}
               {encounter.strategies.map((strategy) => (
                 <Tab
                   eventKey={strategy.id}
@@ -44,9 +45,6 @@ class RaidDetails extends React.Component {
                   className="text-left"
                 >
                   {strategy.overviews.map((overview) => {
-                    console.log(overview.text);
-                    console.log(overview.type);
-                    console.log(overview.typeContent);
                     switch (overview.type) {
                       case 0:
                       default:
@@ -89,13 +87,48 @@ class RaidDetails extends React.Component {
                             variant="link"
                             eventKey={index + 1}
                           >
-                            {console.log(index)}
                             {"Fireteam Member " + (index + 1)}
                           </Accordion.Toggle>
                         </Card.Header>
 
                         <Accordion.Collapse eventKey={index + 1}>
-                          <Card.Body>{person}</Card.Body>
+                          <Card.Body>
+                            {person.map((personContent) => {
+                              switch (personContent.type) {
+                                case 0:
+                                default:
+                                  return (
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-sm">
+                                          <TextContainer
+                                            text={personContent.text}
+                                          />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  );
+                                case 1:
+                                  return (
+                                    <VideoContainer
+                                      content={{
+                                        text: personContent.text,
+                                        videoId: personContent.typeContent,
+                                      }}
+                                    />
+                                  );
+                                case 2:
+                                  return (
+                                    <ImageContainer
+                                      content={{
+                                        text: personContent.text,
+                                        imgsrc: personContent.typeContent,
+                                      }}
+                                    />
+                                  );
+                              }
+                            })}
+                          </Card.Body>
                         </Accordion.Collapse>
                       </Card>
                     ))}

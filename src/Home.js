@@ -66,7 +66,7 @@ class Home extends React.Component {
           <></>
         )}
         {this.state.currentPage == null ? (
-          <Row className="row justify-content-md-center">
+          <Row className="row justify-content-md-center" id="raidcard">
             <CardGroup>
               {this.state.raidArray.map((raid) => (
                 <RaidCard
@@ -88,8 +88,9 @@ class Home extends React.Component {
             <></>
           )}
         </Container>
-        <Footer></Footer>
-      </>
+        <Footer id="footer" className="fixed-bottom"></Footer>
+
+</>
     );
   }
 }

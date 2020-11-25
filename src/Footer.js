@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 class Footer extends React.Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" className="nav">
         <Navbar.Brand>Thanks for using this website!</Navbar.Brand>
       </Navbar>
     );

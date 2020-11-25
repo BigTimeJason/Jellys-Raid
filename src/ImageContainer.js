@@ -1,5 +1,8 @@
 import React from "react";
 import TextContainer from "./TextContainer";
+import Frog from "./img/gardenimg/Frog.png"
+import Image from 'react-bootstrap/Image'
+
 class ImageContainer extends React.Component {
 
     render() {
@@ -8,7 +11,7 @@ class ImageContainer extends React.Component {
             <div class="row">
               <div class="col-sm"><TextContainer text={this.props.content.text}></TextContainer></div>
               <div class="col-sm">
-                <img src={this.props.content.imgsrc}/>
+                <Image src={this.props.content.imgsrc}/>
               </div>
             </div>
           </div>
